@@ -35,13 +35,13 @@
             <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
                 <div>
                     <h2 class="text-lg font-bold text-slate-900">실전 기출 모의고사</h2>
-                    <p class="text-sm text-slate-500">제공된 기출문제를 풀고 즉시 정답과 해설을 확인하세요[span_0](start_span)[span_0](end_span)[span_1](start_span)[span_1](end_span).</p>
+                    <p class="text-sm text-slate-500">제공된 기출문제를 풀고 즉시 정답과 해설을 확인하세요[span_2](start_span)[span_2](end_span)[span_3](start_span)[span_3](end_span).</p>
                 </div>
                 <div class="flex gap-2 w-full md:w-auto">
                     <select id="subject-select" class="border border-slate-300 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 flex-grow md:flex-grow-0">
                         <option value="all">전체 과목</option>
-                        <option value="intro">제1과목 : 부동산학개론[span_2](start_span)[span_2](end_span)[span_3](start_span)[span_3](end_span)</option>
-                        <option value="civil">제1과목 : 민법 및 민사특별법[span_4](start_span)[span_4](end_span)</option>
+                        <option value="intro">제1과목 : 부동산학개론[span_4](start_span)[span_4](end_span)[span_5](start_span)[span_5](end_span)</option>
+                        <option value="civil">제1과목 : 민법 및 민사특별법[span_6](start_span)[span_6](end_span)</option>
                     </select>
                     <button onclick="loadQuestions()" class="bg-indigo-600 text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-indigo-700 transition whitespace-nowrap">문제 불러오기</button>
                 </div>
@@ -95,6 +95,7 @@
     <!-- 스크립트 로직 -->
     <script>
         const sampleQuestions = [
+            // --- 부동산학개론 ---
             {
                 id: 1,
                 subject: "intro",
@@ -108,7 +109,7 @@
                     "⑤ 영속성으로 인해 부동산활동에서 토지는 감가상각을 고려하여야 한다."
                 ],
                 answer: 4,
-                explanation: "정답 ④: 용도의 다양성으로 인해 토지의 경제적 용도는 다양하게 전환될 수 있으며 경제적 공급은 증가할 수 있습니다[span_5](start_span)[span_5](end_span)[span_6](start_span)[span_6](end_span)."
+                explanation: "정답 ④: 용도의 다양성으로 인해 토지의 경제적 용도는 다양하게 전환될 수 있으며 경제적 공급은 증가할 수 있습니다[span_7](start_span)[span_7](end_span)[span_8](start_span)[span_8](end_span)."
             },
             {
                 id: 2,
@@ -123,10 +124,42 @@
                     "⑤ ㄱ: 필지, ㄴ: 나대지"
                 ],
                 answer: 2,
-                explanation: "정답 ②: (ㄱ)은 주된 용도에 따른 토지의 종류 구분인 '지목'이며, (ㄴ)은 건축물이 없고 사법상 제한권리마저 없는 토지인 '나지'에 해당합니다[span_7](start_span)[span_7](end_span)[span_8](start_span)[span_8](end_span)."
+                explanation: "정답 ②: (ㄱ)은 주된 용도에 따른 토지의 종류 구분인 '지목'이며, (ㄴ)은 건축물이 없고 사법상 제한권리마저 없는 토지인 '나지'에 해당합니다[span_9](start_span)[span_9](end_span)[span_10](start_span)[span_10](end_span)."
             },
             {
                 id: 3,
+                subject: "intro",
+                subjectName: "부동산학개론",
+                question: "3. 토지의 특성에 관한 설명으로 틀린 것은?",
+                options: [
+                    "① 용도의 다양성으로 인해 두 개 이상의 용도가 동시에 경합할 수 없고 용도의 전환 및 합병ㆍ분할을 어렵게 한다.",
+                    "② 부증성으로 인해 토지의 물리적 공급이 어려우므로 토지이용의 집약화가 요구된다.",
+                    "③ 부동성으로 인해 주변 환경의 변화에 따른 외부효과가 나타날 수 있다.",
+                    "④ 영속성으로 인해 재화의 소모를 전제로 하는 재생산이론과 물리적 감가상각이 적용되지 않는다.",
+                    "⑤ 개별성으로 인해 토지별 완전한 대체 관계가 제약된다."
+                ],
+                answer: 1,
+                explanation: "정답 ①: 용도의 다양성으로 인해 토지는 여러 용도로 전환 및 합병·분할이 용이해집니다[span_11](start_span)[span_11](end_span)."
+            },
+            {
+                id: 4,
+                subject: "intro",
+                subjectName: "부동산학개론",
+                question: "4. 부동산시장에 대한 정부의 개입에 관한 설명으로 틀린 것은?",
+                options: [
+                    "① 부동산투기, 저소득층 주거문제, 부동산자원배분의 비효율성은 정부가 부동산시장에 개입하는 근거가 된다.",
+                    "② 부동산시장실패의 대표적인 원인으로 공공재, 외부효과, 정보의 비대칭성이 있다.",
+                    "③ 토지비축제도는 공익사업용지의 원활한 공급과 토지시장 안정을 위해 정부가 직접적으로 개입하는 방식이다.",
+                    "④ 토지수용, 종합부동산세, 담보인정비율, 개발부담금은 부동산시장에 대한 직접개입수단이다.",
+                    "⑤ 정부가 주택시장에 개입하여 민간분양주택 분양가를 규제할 경우 주택산업의 채산성ㆍ수익성을 저하시켜 신축 민간주택의 공급을 축소시킨다."
+                ],
+                answer: 4,
+                explanation: "정답 ④: 종합부동산세, 담보인정비율(LTV), 개발부담금은 간접개입(또는 조세·금융정책) 수단에 해당합니다[span_12](start_span)[span_12](end_span)."
+            },
+
+            // --- 민법 및 민사특별법 ---
+            {
+                id: 5,
                 subject: "civil",
                 subjectName: "민법 및 민사특별법",
                 question: "41. 반사회질서의 법률행위에 해당하는 것은? (다툼이 있으면 판례에 따름)",
@@ -138,10 +171,10 @@
                     "⑤ 양도소득세를 회피할 목적으로 실제 거래가액보다 낮은 금액을 대금으로 기재한 매매계약"
                 ],
                 answer: 3,
-                explanation: "정답 ③: 부정한 보험금 취득을 목적으로 다수의 보험계약을 체결한 것은 반사회질서의 법률행위(제103조)로 무효입니다[span_9](start_span)[span_9](end_span)."
+                explanation: "정답 ③: 부정한 보험금 취득을 목적으로 다수의 보험계약을 체결한 것은 반사회질서의 법률행위(제103조)로 무효입니다[span_13](start_span)[span_13](end_span)."
             },
             {
-                id: 4,
+                id: 6,
                 subject: "civil",
                 subjectName: "민법 및 민사특별법",
                 question: "42. 甲은 강제집행을 피하기 위해 자신의 X부동산을 乙에게 가장매도하여 소유권이전등기를 해 주었는데, 乙이 이를 丙에게 매도하고 소유권이전등기를 해 주었다. 다음 설명 중 틀린 것은?",
@@ -153,7 +186,37 @@
                     "⑤ 만약 악의의 丙이 선의의 丁에게 X부동산을 매도하고 소유권이전등기를 해 주더라도 丁은 소유권을 취득하지 못한다."
                 ],
                 answer: 5,
-                explanation: "정답 ⑤: 제3자(丙)가 악의이더라도 그로부터 다시 선의로 권리를 취득한 전득자(丁)는 '엄폐물의 법칙'에 의해 유효하게 소유권을 취득합니다[span_10](start_span)[span_10](end_span)."
+                explanation: "정답 ⑤: 제3자(丙)가 악의이더라도 그로부터 다시 선의로 권리를 취득한 전득자(丁)는 '엄폐물의 법칙'에 의해 유효하게 소유권을 취득합니다[span_14](start_span)[span_14](end_span)."
+            },
+            {
+                id: 7,
+                subject: "civil",
+                subjectName: "민법 및 민사특별법",
+                question: "43. 甲으로부터 甲 소유 X토지의 매도 대리권을 수여받은 乙은 甲을 대리하여 丙과 X토지에 대한 매매계약을 체결하였다. 다음 설명 중 틀린 것은? (다툼이 있으면 판례에 따름)",
+                options: [
+                    "① 乙은 특별한 사정이 없는 한 매매잔금의 수령 권한을 가진다.",
+                    "② 丙의 채무불이행이 있는 경우, 특별한 사정이 없는 한 乙은 매매계약을 해제할 수 없다.",
+                    "③ 매매계약의 해제로 인한 원상회복의무는 甲과 丙이 부담한다.",
+                    "④ 丙이 매매계약을 해제한 경우, 丙은 乙에게 채무불이행으로 인한 손해배상을 청구할 수 없다.",
+                    "⑤ 乙이 자기의 이익을 위하여 배임적 대리행위를 하였고 丙도 이를 안 경우, 乙의 대리행위는 甲에게 효력을 미친다."
+                ],
+                answer: 5,
+                explanation: "정답 ⑤: 대리인이 상대방의 이익을 위하거나 배임적인 목적(진의를 숨긴 대리)으로 대리권을 행사하였고 상대방이 이를 알았거나 알 수 있었을 경우(비진의표시 유추적용 또는 민법 제107조 단서 취지), 그 대리행위는 본인에게 효력이 미치지 않습니다[span_15](start_span)[span_15](end_span)."
+            },
+            {
+                id: 8,
+                subject: "civil",
+                subjectName: "민법 및 민사특별법",
+                question: "44. 주택임대차보호법상 대항력 및 갱신에 관한 설명으로 틀린 것은? (다툼이 있으면 판례에 따름)",
+                options: [
+                    "① 임대인이 목적물을 임대할 권한이 없어도 임대차계약은 유효하게 성립한다.",
+                    "② 임차기간을 영구로 정한 임대차약정은 특별한 사정이 없는 한 허용된다.",
+                    "③ 임차인은 특별한 사정이 없는 한 자신이 지출한 임차물의 보존에 관한 필요비 금액의 한도에서 차임의 지급을 거절할 수 있다.",
+                    "④ 임대차가 묵시의 갱신이 된 경우, 전임대차에 대해 제3자가 제공한 담보는 원칙적으로 소멸하지 않는다.",
+                    "⑤ 임대차 종료로 인한 임차인의 원상회복의무에는 임대인이 임대 당시의 부동산 용도에 맞게 다시 사용할 수 있도록 협력할 의무까지 포함된다."
+                ],
+                answer: 5,
+                explanation: "정답 ⑤: 임차인의 원상회복의무는 통상 개인이 수리하거나 원상태로 반환하는 것을 의미하며, 임대인이 임대 당시의 부동산 용도에 맞게 다시 사용할 수 있도록 협력할 의무까지 임차인에게 부과되지는 않습니다[span_16](start_span)[span_16](end_span)."
             }
         ];
 
